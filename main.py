@@ -96,8 +96,8 @@ class Comment(db.Model):
     post = relationship("BlogPost", back_populates="comments")
 
 
-with app.app_context():
-    db.create_all()  # Creates the tables :D
+# with app.app_context():
+#     db.create_all()  # Creates the tables locally :D
 
 
 # ---------- Decorators ---------- #
