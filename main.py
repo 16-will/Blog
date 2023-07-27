@@ -16,7 +16,7 @@ import forms
 # ---------- FLASK ---------- #
 # Flask
 app = Flask(__name__)  # Starts Flask w/ this script as __main__
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')  # Used for authentication
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')  # Used for authentication
 
 # Bootstrap
 Bootstrap(app)
